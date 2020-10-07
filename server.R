@@ -80,10 +80,12 @@ shinyServer(function(input, output) {
         input$text_area 
     })
     
-    output$distPlot <- renderPlot({
-        input$goButton
-        dist <- isolate(rnorm(input$obs))
-        hist(dist)
+    output$action_bt_io <- renderText({
+        input$action_button
+    })
+    
+    output$action_at_io <- renderText({
+        input$action_link
     })
     
 })
