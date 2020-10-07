@@ -68,7 +68,7 @@ shinyUI(fluidPage(
                                  ##submitButton(text = "Autorizar")
                                  
                              ),
-                             
+                              
                              mainPanel(
                                  h2("Slider input sencillo"),
                                  verbatimTextOutput("slider_io"),
@@ -96,14 +96,19 @@ shinyUI(fluidPage(
                                  
                                  h2('Grouped checkbox'),
                                  verbatimTextOutput('multiple_box_io'),
+                                 
                                  h2("Radio Buttons"),
                                  verbatimTextOutput("radio_io"),
+                                 
                                  h2('Texto'),
                                  verbatimTextOutput("text_io"),
+                                 
                                  h2('Parrafo'),
                                  verbatimTextOutput("text_area_io"),
+                                 
                                  h2('Action Button'),
                                  verbatimTextOutput("action_bt_io"),
+                                 
                                  h2('Action Link'),
                                  verbatimTextOutput("action_at_io")
                              )

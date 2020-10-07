@@ -59,4 +59,31 @@ shinyServer(function(input, output) {
         input$numeric_input
     })
     
+    output$date_io <- renderText({
+        paste("", as.character(input$date_input))
+    })
+    
+    output$single_box_io <- renderText({
+        input$single_box
+    })
+    
+    output$multiple_box_io <- renderText({
+        group_box <- paste(input$group_box, collapse = ", ")
+        paste("", group_box)
+    })
+    
+    output$text_io <- renderText({
+        input$text_input
+    })
+    
+    output$text_area_io <- renderText({
+        input$text_area 
+    })
+    
+    output$distPlot <- renderPlot({
+        input$goButton
+        dist <- isolate(rnorm(input$obs))
+        hist(dist)
+    })
+    
 })
