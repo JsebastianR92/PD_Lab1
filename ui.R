@@ -25,7 +25,7 @@ shinyUI(fluidPage(
                                              max = 100,
                                              step = 10,
                                              post = '%', animate = TRUE),
-                                 sliderInput("Slider-input2",
+                                 sliderInput("Slider_input2",
                                              "Seleccione un rango",
                                              value =c(0,200),
                                              min = 0,
@@ -72,20 +72,28 @@ shinyUI(fluidPage(
                              mainPanel(
                                  h2("Slider input sencillo"),
                                  verbatimTextOutput("slider_io"),
+                                 
                                  h2("Slider input rango"),
                                  verbatimTextOutput("slider_io_2"),
+                                 
                                  h2("Select input"),
                                  verbatimTextOutput("select_io"),
+                                 
                                  h2("select input multiple"),
                                  verbatimTextOutput("select_io_multi"),
+                                 
                                  h2("Fecha"),
                                  verbatimTextOutput('date_io'),
+                                 
                                  h2('Rango de fechas'),
                                  verbatimTextOutput('range_io'),
+                                 
                                  h2('Numeric Input'),
                                  verbatimTextOutput('numeric_io'),
+                                 
                                  h2('single Checkbox'),
                                  verbatimTextOutput('single_box_io'),
+                                 
                                  h2('Grouped checkbox'),
                                  verbatimTextOutput('multiple_box_io'),
                                  h2("Radio Buttons"),
